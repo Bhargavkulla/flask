@@ -3,22 +3,22 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: trial
-  name: trial
+    app: bhargav-deploy
+  name: bhargav-deploy
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: trial
+      app: bhargav-deploy
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: trial
+        app: bhargav-deploy
     spec:
       containers:
-      - image: samimmondal/sample
-        name: samimmondal
+      - image: bhargavakulla/app
+        name: bhargavakulla
         resources: {}
 status: {}

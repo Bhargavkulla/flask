@@ -3,14 +3,14 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: trial
-  name: trial
+    app: bhargav-deploy
+  name: bhargav-deploy
 spec:
   ports:
   - port: 80
     protocol: TCP
     targetPort: 5000
   selector:
-    app: trial
+    app: bhargav-deploy
 status:
   loadBalancer: {}
